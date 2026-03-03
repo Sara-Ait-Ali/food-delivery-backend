@@ -8,19 +8,19 @@ order-service
 All services are connected through an API Gateway (Nginx) and run using Docker Compose.
 The order-service stores order data in Firebase Firestore to ensure that data is persistent even after restarting the containers.
 
-#Architecture
-The system uses an API Gateway as the single entry point (port 8080).
+##Architecture
+#The system uses an API Gateway as the single entry point (port 8080).
 Each service runs independently inside a Docker network and communicates using REST APIs.
 When creating an order, the order-service first calls the menu-service to validate that the requested item exists.
 If valid, the order is stored in Firestore.
 The architecture diagram is included in the file architecture-diagram.png.
 
-#How to Run the Project
--Requirements:
-    Docker
-    Docker Compose
--Steps:
-1.Clone the repository.
+##How to Run the Project
+#-Requirements:
+    #Docker
+    #Docker Compose
+#-Steps:
+#1.Clone the repository.
 2.Add your Firebase serviceAccountKey.json file inside the order-service folder.
 3.Run the command:
 docker-compose up --build
