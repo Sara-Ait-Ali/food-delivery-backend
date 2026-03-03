@@ -101,3 +101,17 @@ You can import it into Postman to test all endpoints through port 8080.
 Ports and service URLs are configured using environment variables inside docker-compose.yml.
 
 The serviceAccountKey.json file is not included in the repository for security reasons.
+
+#Technologies Used
+
+-Node.js (Express) – Used to implement the microservices.
+
+-Nginx – Used as the API Gateway and single entry point.
+
+-Docker & Docker Compose – Used to containerize and orchestrate the services.
+
+-Firebase Firestore – Used as a managed cloud database for persistent storage.
+
+-Postman – Used for API testing.
+
+-Draw.io – Used to design the architecture diagram.
